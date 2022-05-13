@@ -18,12 +18,12 @@ wait_time_to_delete_anti_ping_message = '10 seconds'
 delete_ping_message = True
 #this might alert any other anti-ghost-ping-bots
 log_pingers = False
-
+white_list = [bot.user,"example#1000"] #keep bot.user
 
 wait_time_to_delete_anti_ping_message = wait_time_to_delete_anti_ping_message.replace(' seconds','');wait_time_to_delete_anti_ping_message=int(wait_time_to_delete_anti_ping_message)
 @bot.event 
 async def on_message(ctx):
-  if '@' in ctx.content and ctx.author != bot.user:
+  if '@' in ctx.content and ctx.author not in white_list:
     if (ctx.content).find(' ') != -1:
       x = ((ctx.content).split(' ')[0])
     else:
