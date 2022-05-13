@@ -14,10 +14,10 @@ bot.author_id = 0
 
 delete_anti_ping_message = True
 wait_time_to_delete_anti_ping_message = '10 seconds'
-#this will make the bot unsable while waiting
+#this will make the bot unusable while waiting
 delete_ping_message = True
+#this might alert any other anti-ghost-ping-bots
 log_pingers = False
-#this will alert any ghost ping bots
 
 
 wait_time_to_delete_anti_ping_message = wait_time_to_delete_anti_ping_message.replace(' seconds','');wait_time_to_delete_anti_ping_message=int(wait_time_to_delete_anti_ping_message)
