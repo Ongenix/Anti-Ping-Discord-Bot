@@ -1,5 +1,5 @@
 import os
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 from discord.ext import commands
 
 __author__ = 'Ongenix'
@@ -42,6 +42,6 @@ async def on_message(ctx):
       msg = await ctx.channel.fetch_message(ctx.id)
       await msg.delete()
 
-keep_alive()
+#keep_alive()
 token = 'put your bot token here'
 bot.run(token)
