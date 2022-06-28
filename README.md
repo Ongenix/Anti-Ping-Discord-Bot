@@ -1,4 +1,5 @@
 # ⭐️ for more
+Please only use this on your own server, I am not responsible for anything you do with this.
 # Anti-Ping-Discord-Bot
 1. Install python
 2. Put your discord token at the very bottom
